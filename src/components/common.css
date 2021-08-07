@@ -1,0 +1,344 @@
+/* note.js */
+.note-container{
+    background: #ffdb76;
+}
+.note{
+    padding: 10px 8%;
+    line-height: 1.6;
+    color: #292929;
+    font-size: 1.18rem;
+    font-weight: 350;
+}
+
+/* calendar.js */
+.calendar-container{
+    margin: 11px 8%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    border-bottom: 1px solid #292929;
+}
+.calendar-btn{
+    font-size: 1.3rem;
+    width: 13%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #292929;
+    border-radius: 11px;
+    margin-bottom: 11px;
+}
+.calendar-btn:hover{
+    background: #dbdbdb;
+    color: #ffffff !important;
+}
+.active-btn{
+    background: #292929;
+    color: #ffffff;
+}
+.day, .date {
+    padding: 10px 0;
+}
+.date{
+    font-weight: bold;
+}
+
+/* LunchMenu.js */
+.menu-container{
+    margin: 0 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 2%;
+}
+.menu-header{
+    padding: 1rem 0 3rem 0;
+    display: flex;
+    margin: 0 8%;
+    justify-content: space-between;
+}
+.menu-heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+.lunch-btn{
+    background: #292929;
+    color: #ffffff;
+}
+.dinner-btn{
+    background: none;
+    color: #292929;
+}
+.toggle{
+    font-size: 16px;
+    padding: 10px 24px 8px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.toggle:hover{
+    background: #dbdbdb;
+}
+.menu-footer{
+    padding: 3rem;
+}
+.request-btn{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border: none;
+    background: #ffa100;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.request-btn:hover{
+    background: #ff7600;
+    transition: all .3s ease-in-out;
+}
+
+
+/* card.js */
+.card-container{
+    width: 32%;
+    cursor: pointer;
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 767px){
+    .card-container{
+        width: 47%;
+    }
+}
+@media (max-width: 500px){
+    .card-container{
+        width: 100%;
+    }
+}
+.img-container > img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: -5px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.img-container > img:hover{
+    transform: scale(1.05, 1.05);
+    border-radius: 0.5rem;
+}
+.img-info{
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow:  1px 4px 19px 4px rgba(0,0,0,0.2);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.img-info:hover{
+    transition: all .3s ease-in-out;
+    box-shadow: 1px 4px 19px 0px rgba(0,0,0,0.74);
+}
+.meal-name{
+    padding-bottom: 0.7rem;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.by{
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+.btn-container{
+    padding: 0 0 10px 0;
+    text-align: left;
+}
+.btn-info{
+    background: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.veg{
+    color: #18d518;
+    border-color: #18d518;
+}
+.org{
+    color: #fa9125;
+    border-color: #fa9125;
+}
+.meal-info{
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: auto;
+}
+.schedule-btn{
+    border: none;
+    color: #ffffff;
+    background: #292929;
+    padding: 12px 0;
+    font-size: 18px;
+    width: 84%;
+    margin: 0 8%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.schedule-btn:hover{
+    background: #4d4b4b;
+}
+
+/* footer.js */
+.footer-container{
+    padding: 70px 8% 0 8%;
+    border-top: 1px solid;
+}
+.footer-1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+.col-heading{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.col-links{
+    padding: 5px 0;
+}
+.col-links > a{
+    text-decoration: none;
+    color: #292929;
+    font-weight: 350;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.col-links > a:hover{
+    border-bottom: 1px solid;
+}
+.footer-2{
+    border-top: 1px solid;
+    padding: 20px 0;
+}
+.footer-2 >div i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.fa-facebook{
+    color: #4267B2;
+    padding: 15px 20px;
+}
+.fa-instagram{
+    color: #E1306C;
+    padding: 15px;
+}
+.fa-linkedin{
+    color: #2867B2;
+    padding: 15px;
+}
+.fa-twitter{
+    color: #1DA1F2;
+    padding: 15px;
+}
+.fa-facebook:hover{
+    color: #ffffff;
+    background: #4267B2;
+    border-radius: 100px;
+    transition: all .6s ease-in-out;
+}
+.fa-instagram:hover{
+    color: #ffffff;
+    background: #E1306C;
+    border-radius: 100px;
+    transition: all .6s ease-in-out;
+}
+.fa-linkedin:hover{
+    color: #ffffff;
+    background: #2867B2;
+    border-radius: 100px;
+    transition: all .6s ease-in-out;
+}
+.fa-twitter:hover{
+    color: #ffffff;
+    background: #1DA1F2;
+    border-radius: 100px;
+    transition: all .6s ease-in-out;
+}
+.inc{
+    font-weight: 350;
+}
+.tos{
+    padding-top: 1rem;
+    font-size: 14px;
+}
+.tos > a{
+    color: #292929;
+    padding-right: 16px;
+    font-weight: 350;
+}
+
+/* labels of bt in card */
+.Vegetarian{
+    border-color: #04b701;
+    color: #04b701;
+}
+.Vegetarian:hover{
+    background: #04b701;
+    color: #ffffff;
+}
+.Middle-Eastern{
+    border-color: #b17600;
+    color: #b17600;
+}
+.Middle-Eastern:hover{
+    background: #b17600;
+    color: #ffffff;
+}
+.Vegan{
+    border-color: #52cb01;
+    color: #52cb01;
+}
+.Halal{
+    border-color: #028500;
+    color: #028500;
+}
+.Fast-Foof{
+    border-color: #e9a001;
+    color: #e9a001;
+}
+.American{
+    border-color: #002aff;
+    color: #002aff;
+}
+.Jamacian{
+    border-color: #308d47;
+    color: #308d47;
+}
+.Indian{
+    border-color: #eb8900;
+    color: #eb8900;
+}
+.Home-Style{
+    border-color: #fc6f03;
+    color: #fc6f03;
+}
+.Huge-Portion{
+    border-color: #0063cc;
+    color: #0063cc;
+}
+
+.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate(0, 40px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+}
